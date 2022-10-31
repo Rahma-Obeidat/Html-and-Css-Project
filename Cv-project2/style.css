@@ -1,0 +1,285 @@
+@media  only screen and (min-device-width: 0px) and (max-device-width: 480px) {
+   
+   
+    .img_personal{
+        width: 50px;
+        height: 50px;
+         border-radius: 50%; 
+          margin-top: 50px;
+  
+      }  
+    
+    .div_card{
+ display: flex;
+ flex-direction: column;
+         justify-content: space-evenly;
+  gap: 10px;
+  margin-left: 10px;
+      }
+      .educatio{
+        display: flex;
+        flex-direction: column;
+      gap:20px;
+      
+      align-items: center;
+      /* width: 100vw; */
+       
+       
+    } 
+#Sub_edu{
+    border: 2px solid black;
+    width: 100vw;
+}
+
+    .personal_information{
+        display: flex;
+       flex-wrap: wrap;
+        font-size: 20px;
+        font-style: italic;
+       
+
+        
+       
+    }
+    .table1{
+        width:50% ;
+        padding-right: 300px;
+      }
+
+      /* .skill{
+
+     display: flex;
+     flex-wrap: wrap;
+   
+      } */
+      .languges{
+
+        display:flex ;
+        flex-wrap: wrap;
+     
+        }
+        #languges1{
+
+            /* margin-top: 110px;  */
+            /* height: 300px; */
+            margin-right: 70px;
+            } 
+            .edu_image{
+                margin-right: 50px;
+            }
+            .div_footer{
+                display: flex;
+               
+               flex-direction: column;
+              
+               background-color: #101111;
+               color: aliceblue;
+           
+              }
+              h5{
+                font-size: 15px;
+              }
+           .font_footre{
+            font-size: 10px;
+           }
+           
+            .skill{
+                display:flex ;
+              /* justify-content: center; */
+              flex-direction: column;
+            
+               border: 5px solid #406891;
+              margin-bottom: 30px;
+              background-color: aliceblue;
+               width: 70vw;
+              }
+        
+              /* Big_Div{
+                width: 100px;
+                height: 100px;
+              } */
+
+              #certificate{
+                display:flex;
+                 justify-content: space-around;
+                 flex-wrap: wrap;
+              }
+
+
+           }
+/* 
+      #skills{
+       border: 2px solid black;
+        margin-top: 1000px; 
+        height: 800vh;
+
+      }
+      #Big_Div{
+        width:100vw ;
+      }
+      .languges{
+
+        display:flex ;
+        flex-direction: column;
+         align-content: space-around;
+        
+        }
+        #soft{
+            background-image: url(b1.png);
+             background-repeat: no-repeat;
+             background-size: contain;
+             height: 400px;
+             width: 700px;
+             height: 700px;
+             margin-top: 100px;
+          }
+          #technical{
+            background-image: url(b1.png);
+             background-repeat: no-repeat;
+             background-size: contain;
+             width: 700px;
+             height: 700px;
+          margin-top: 100px;
+          } */
+  
+
+  @media only screen and (min-width:481px) and (max-width:768px) {
+
+    
+    .img_personal{
+        width: 50px;
+        height: 50px;
+         border-radius: 50%; 
+          margin-top: 50px;
+  
+      }  
+    
+    .div_card{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 10px;
+       /* margin-left: 10px; */
+      margin-right: 10px;
+      }
+
+
+
+      .educatio{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      gap:20px;
+      
+      align-items: center;
+      /* width: 100vw; */
+       
+       
+    } 
+#Sub_edu{
+    border: 2px solid black;
+    width: 100vw;
+}
+
+    .personal_information{
+        display: flex;
+       flex-wrap: wrap;
+        font-size: 20px;
+        font-style: italic;
+        margin-right: 28px;
+       
+
+        
+       
+    }
+    
+
+      /* .skill{
+
+     display: flex;
+     flex-wrap: wrap;
+   
+      } */
+      .languges{
+
+        display:flex ;
+        flex-wrap: wrap;
+     
+        }
+        #languges1{
+
+            /* margin-top: 110px;  */
+            /* height: 300px; */
+            margin-right: 70px;
+            } 
+            .edu_image{
+                margin-right: 50px;
+            }
+            .div_footer{
+                display: flex;
+               
+               flex-direction: column;
+              
+               background-color: #101111;
+               color: aliceblue;
+           
+              }
+              h5{
+                font-size: 15px;
+              }
+           .font_footre{
+            font-size: 10px;
+           }
+           
+            .skill{
+                display:flex ;
+              /* justify-content: center; */
+              flex-direction: column;
+            
+               border: 5px solid #406891;
+              margin-bottom: 30px;
+              background-color: aliceblue;
+               width: 70vw;
+              }
+    /* .img_personal{
+        width:100px;
+        height:100px;
+       border-radius: 50%; 
+        margin-top: 50px;
+
+    } 
+    .skill{
+
+        display: flex;
+        flex-wrap: wrap;
+      
+       
+           
+         }
+   
+         #skills{
+          border: 2px solid black;
+           margin-top: 200px; 
+           height: 4000vh;
+           width: 100vw;
+   
+         }
+         #soft{
+            background-image: url(b1.png);
+             background-repeat: no-repeat;
+             background-size: contain;
+            font-size: 10px;
+            width: 250px;
+            height: 300px;
+             margin-top: 100px;
+          }
+          #technical{
+            background-image: url(b1.png);
+             background-repeat: no-repeat;
+             background-size: contain;
+             width: 100px;
+             height: 100px;
+          margin-top: 100px;
+          } */
+}

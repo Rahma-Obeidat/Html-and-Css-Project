@@ -6,14 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project2</title>
     <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a8b56cb52b.js" crossorigin="anonymous"></script>
     <style>
         .personal_information{
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             font-size: 20px;
             font-style: italic;
            
+        }
+        .img_personal{
+
+          width:400px;
+           height:400px;
+          border-radius: 50%; 
+           margin-top: 50px;
+           box-shadow:20px 20px 20px #406891;
+
         }
         .button1 {
             
@@ -21,11 +31,14 @@
             border-radius: 12px;
             margin-left: 100px;
             font-weight: bold;
+            
         }
         .educatio{
             display: flex;
             justify-content: space-around;
             padding: 50px;
+            /* height: 300px; */
+         
             
         }
       .div_education{
@@ -42,17 +55,176 @@
         justify-content: space-between;
         
       }
+      .footr_icon{
+        font-size: 20px;
+      }
+      .social{
+        text-decoration: underline;
+      }
+      a:hover {
+  background-color:#F5EFE6;
+  border-radius: 8px;
+ 
+}
+button:hover{
+
+  background-color: azure;
+  color: #406891;
+  box-shadow:5px 10px 18px #406891;
+  
+}
+td:hover{
+  font-size: large;
+}
+th:hover{
+ color:#1a344f;
+ box-shadow:5px 10px 18px #F5EFE6;
+}
+ img:hover{
+
+  box-shadow:5px 10px 18px #406891;
+} 
+
+.h2_Education{
+  padding-top:5px ; 
+ 
+  color: aliceblue;
+  background-color: #406891;
+  border-radius: 8px;
+  text-align: center;
+  
+}
+.h2_slills{
+  color: #406891;
+   
+}
+.card {
+ 
+  
+  width: 300px; 
+  border: 3px solid #406891;
+}
+
+.container {
+  padding: 2px 16px;
+}
+.p_Languages
+{
+  color: aliceblue;
+  background-color: #293d50;
+  font-size:25px;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+footer{
+  font-size: small;
+}
+.div_card{
+
+  display:flex; 
+  justify-content: space-around;
+}
+.table1{
+  width:50% ;
+  margin-left: 350px;
+}
+/* skills section  */
+#skills{
+  margin-top: 70px; 
+  display: flex;
+ justify-content: center;
+} 
+/* .skill{
+
+ display:flex ;
+justify-content: center;
+ border: 5px solid #406891;
+margin-bottom: 30px;
+background-color: aliceblue;
+ width: 70vw;
+
+margin-left: 15rem;
+
+height: 300px;
+padding-top: 40px; 
+} */
+.skill{
+  display:flex ;
+justify-content: center;
+ border: 5px solid #406891;
+margin-bottom: 30px;
+background-color: aliceblue;
+ width: 70vw;
+}
+.skill div {
+  width: 30%;
+
+}
+
+
+/* skills section  */
+#english{
+  background-image: url(a.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   height: 400px;
+   width: 500px;
+   height: 500px;
+   margin-top: -90px;
+   margin-left: 160px;
+}
+#Arabic{
+  background-image: url(a.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   width: 500px;
+   height: 500px;
+margin-top: -90px;
+}
+.languges{
+
+display:flex ;
+flex-direction: row;
+ justify-content: space-around;
+
+}
+#languges{
+
+margin-top: 110px; 
+/* height: 300px; */
+
+} 
+.h2_Lan{
+  color: #406891;
+   padding-left: 100px; 
+   /* margin-top: 180px; */
+   background-color: white;
+   border-radius: 12px;
+}
+.div_footer{
+  display: flex;
+  flex-direction: row;
+ justify-content: space-around;
+ background-color: #101111;
+ color: aliceblue;
+}
+#certificate{
+  display:flex;
+   justify-content: space-around;
+}
     </style>
 </head>
 <body style="background-color: #F5EFE6;" >
     <nav class="navbar navbar-expand-lg" style="background-color:#B4CDE6;">
-        <div class="container-fluid"  style="float:right ;">
-          <a class="navbar-brand" href="#"> <img src="logo2-removebg-preview.png" width="100px" height="100px" > </a>
+        <div class="container-fluid" >
+          <a class="navbar-brand" href="#"> <img src="R_Logo.png" width="100px" height="100px" > </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
            
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left:20px ; text-decoration: underline;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left:540px ; font-size: 20px;">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#Section1" style="color: rgb(40, 40, 125);">Education </a>
               </li>
@@ -80,33 +252,44 @@
         </div>
       </nav>
 
-      <div style="background-color:#F5EFE6;">
+      <div id="Big_Div" style="background-color:#F5EFE6;" >
        
        
        <div class="personal_information"> 
-        <img src="Personal_Photo.png" width="250px" height="250px" style="border-radius: 50%; margin-top: 50px;" >
+        <img src="Personal_Photo.png" class="img_personal">
 
         
-  
-        <ul style="margin-top: 50px; list-style-type: none;">
-            <li><i class="fa-sharp fa-solid fa-user" style="font-weight:bold ;"></i>Rahma Aktham Obeidat</li>
-            <li><i class="fa-sharp fa-solid fa-book-open" style="font-weight:bold ;"></i> Software Engineering</li>
-            <li><i class="fa-sharp fa-solid fa-location-dot" style="font-weight:bold ;"></i> 130 Saad_ALdeen Street,Irbid,Jordan</li><br>
-            <li><button type="button" class="button1">About Me</button></li>
-        </ul>
-    </div><hr>
-<div class="educatio"> 
-   
+ 
+        <ul style="margin-top: 50px; list-style-type: none;"> <br>
+            <li style="font-size:60px ;"></i>Rahma Aktham Obeidat</li>
+           
+            <li style="font-size:30px ; padding-left: 100px;">Full Stack Web Developer  </li>
+            <li style="font-size:20px ; font-style: italic; padding-left: 150px;">Software Engineer</li>
+           <br>
+           
+           
+         
 
-    <div style="border: 2px solid black;"> 
+              <a href="sample.pdf" download> <li style="padding-left: 70px; padding-top: 75px;"> <button type="button" class="button1" >Download CV</button></li></a>
+              
+        </ul>
+    </div><br>
+
+
+      </div>
+    <h2 id="Section1" class="h2_Education">Education</h2>
+<div class="educatio" > 
+   
+  
+    
        
-<div style="width: 200px; height: 200px;">
+<div id="Sub_edu" style="width: 300px; height: 385px; padding-top: 10px; border: 5px solid #406891;">
    
     
-<img src="Just.png" width="200px" height="200px">
+<img src="Just.png" width="150px" height="150px" style="border-radius: 12px ; margin-left: 70px; " class="edu_image"><br>
+<br>
 
-
-    <ul style="background-color:#B4CDE6;">
+    <ul style="background-color:white; height: 190px; list-style: none; padding-top: 25px; padding-right: 5px;">
         <li><b>Jordan University Of Science and Technology</b></li>
             <li><b>Specialization : </b> Software Engineering</li>
             <li><b>Graduation Project:</b> Clothes Bank</li>
@@ -116,22 +299,36 @@
 
 
 </div>
-</div>
 
-<div> 
 
-<h2 style="margin-top:150px ;" id="Section1"><i class="fa-sharp fa-solid fa-circle-arrow-left" style="color:#406891 ;"></i>Education<i class="fa-sharp fa-solid fa-circle-arrow-right" style="color:#406891 ;"></i></h2>
-</div>
-<div style="border: 2px solid black;">
  
-    <div style="width: 200px; height: 200px;" >
+  <div style="width: 300px; height: 385px; padding-top: 10px; border: 5px solid #406891;">
+   
+    
+    <img src="orange1.jpg" width="150px" height="150px" style="border-radius: 12px ; margin-left: 70px;  " class="edu_image"><br><br>
+    
+    
+        <ul style="background-color:white; height: 190px; list-style: none; padding-top: 25px; padding-right: 5px;">
+            <li><b>Full Stack Web Development Trainee at Coding Academy by Orange</b></li>
+                <li>oct/2022 - may/2022</li>
+                
+            
+        </ul>
+    
+    
+    </div>
+
+
+
+ 
+    <div style="width: 300px; height: 385px; padding-top: 12px; border: 5px solid #406891;" >
        
-        <img src="tahaluf1.jfif" width="200px" height="200px">
-        <ul style="background-color:#B4CDE6;">
+        <img src="tahaluf1.jfif" width="150px" height="150px" style="border-radius: 12px ; margin-left: 70px;" class="edu_image"><br><br>
+        <ul style="background-color:white; height: 190px; list-style: none; padding-right: 5px;">
             <li><b>Tahaluf Al Emarat Technical Solutions</b></li>
                 <li><b>courses:</b>
                     <ul style="list-style-type: style square; ">
-                        <li>Oracle Database</li>
+                        <li>SQL</li>
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
@@ -141,78 +338,220 @@
                 </li>
         </ul>  
         </div>
+
 </div>
 </div>
-</div>
-<div style="margin-top: 200px;">
-    <hr>
-    <div>
-        <h2 style="background-color:#406891; color: aliceblue; padding-left: 20px;" id="Section2"> Soft Skills</h2>
-   <ul style="list-style-type:disc ;">
-    <li>Time Managment</li>
-    <li>Teamwork</li>
-    <li>Communication</li>
-    <li>Willingness to learn </li>
-   </ul>
+
+<div>
+  <hr>
+  <h1 style="text-align:center ; color: #406891; ">Skills</h1><br><br>
+
+<div id="skills">
+  
+      <!-- <h1 style="text-align:center ; color: #406891;">Skills</h1><br><br> -->
+    
+   <div class="skill">
+    <div  id="soft">
+      
+          <h2 class="h2_slills" id="Section2"> Soft Skills</h2>
+        <ul style="list-style-type:disc ; ">
+          <li>Time Managment</li>
+          <li>Teamwork</li>
+          <li>Communication</li>
+          <li>Willingness to learn </li>
+          <li>Creativity</li>
+          <li>Work Ethic</li>
+          <li>Knowledge management</li>
+        </ul>
     </div>
    
-    <div>
-        <h2 style="background-color:#406891; color: aliceblue; padding-left: 20px;" id="Section3">Technical Skills</h2>
+    <div  id="technical">
+        <h2 class="h2_slills"  id="Section3">Technical Skills</h2>
         <ul style="list-style-type:circle ;">
             <li>Computer programming languages</li>
             <li>UX design</li>
             <li>Data analysis</li>
             <li>HTML and CSS</li>
-            <li>Oracle Database</li>
+            <li>SQL</li>
+            <li>C++</li>
+            <li>Documentation</li>
         </ul>
         
     </div>
 </div>
-<hr>
-<div class="h3">
-    <div>
-  <h3 class="h3" style="padding-left:90px ;  background-color: #406891; color: aliceblue;" id="Section4">Certificate</h3><br>
-  <div>
-    <img src="QA.PNG" width="200px" height="200px" style="margin-left:50px ;">
-    <h5 style="margin-left:50px ;">The Hope international company</h5>
-    <h6 style="margin-left:50px ;">QA Software Testing</h6>
-    <h6 style="margin-left:50px ;">FOR A TOTAL OF <sup><b>40</b></sup> HOURS</h6>
+</div>
+</div>
+
+
+
+
+<div style="  border-radius:8px ;"  id="Section4">
+  <h3 style=" text-align: center ; background-color: #406891; color: aliceblue;"> Certificate</h3><br>
+<div id="certificate">
+  <div> 
     
-  </div>
+    <img src="QA.PNG" width="200px" height="200px" style="margin-left:30px ;border-radius: 12px ;">
+    <ul>
+      <li><b>The Hope international company</b></li>
+      <li>QA Software Testing</li>
+      <li>FOR A TOTAL OF <sup><b>40</b></sup> HOURS</li>
+      <li>01/02/2022 <b>To</b> 22/04/2022</li>
   
-   
+    </ul>
+   </div>
+ 
+   <div> 
+    
+    <img src="html.png" width="200px" height="200px" style="margin-left:20px ;border-radius: 12px ;">
+    <ul>
+      <li><b>Sololearn</b></li>
+      <li>Html course</li>
+      <li>FOR A TOTAL OF <sup><b>20</b></sup> HOURS</li>
+      
   
+    </ul>
+   </div>
+</div>
+  
+</div>
+<br>
+<div style="  border-radius:8px ; "  id="Section5" >
+  <h3 style=" text-align: center ; background-color: #406891; color: aliceblue;"> References</h3><br>
+  <div class="div_card">
+    <div class="card">
+      <img src="7ala.jpeg" alt="Avatar" style="width: 295px;">
+      <div class="container">
+        <h4 style="text-align:center ;color: #406891;"><b>Hala Hamdan</b></h4> 
+        <p>Full Stack Technical Trainer at Orange</p> 
+        <p><i class="fa-sharp fa-solid fa-phone"></i> 0776802579</p>
+        <p><i class="fa-brands fa-linkedin" style="font-size: 15px;  color: rgb(55, 55, 235);"></i> Hala Hamdan</p> 
+      </div>
+    </div>
+  
+    <div class="card">
+      <img src="Alaa.jpeg" alt="Avatar" style="width: 295px;">
+      <div class="container">
+        <h4 style="text-align:center ;color: #406891;"><b>Alaa Qazaq</b></h4> 
+        <p>Full Stack Technical Trainer at Orange</p> 
+        <p><i class="fa-sharp fa-solid fa-phone"></i> 0776807230</p> 
+        <p><i class="fa-brands fa-linkedin" style="font-size: 15px;  color: rgb(55, 55, 235);"></i> Alaa Qazaq</p>
+      </div>
     </div>
 
-    <div>
-        <h3 class="h3" style=" background-color: #406891; color: aliceblue; display:inline-block;" id="Section6">Languages</h3>
-        <p><ul>
-            <li>English</li>
-            <li>Arabic</li>
-        </ul></p>
-        
+    <div class="card" >
+      <img src="Hala.jpeg" alt="Avatar" style="width: 295px;">
+      <div class="container">
+        <h4 style="text-align:center ;color: #406891;"><b>Hala Obeidat</b></h4> 
+        <p>Job Coach at Orange Coding Academy</p>
+        <p><i class="fa-sharp fa-solid fa-phone"></i> 0776809087</p> 
+        <p><i class="fa-brands fa-linkedin" style="font-size: 15px;  color: rgb(55, 55, 235);"></i> Hala Obeidat</p>
+       
+      </div>
     </div>
-    <div>
-  <h3 class="h3" style="padding-left:90px ; background-color: #406891; color: aliceblue; text-align: center;" id="Section5">References</h3><br>
-  <img src="Orange.jpg" width="200px" height="200px" style="margin-left:50px ;">
-    <h5 style="margin-left:50px ;">Coding Academy by Orange</h5>
-    <h6 style="margin-left:50px ;">Alaa and Hala coach</h6>
-   
-    </div>
+  
+  
+  </div>
+
+</div><br>
+
+
+
+
+
+<div id="languges">
+
+  
+    <h2 style="text-align:center ; color: #f9fbfd; background-color: #406891;" id="Section6">Languages</h2>
+  
+ <div class="languges">
+  <div>
+    
+      <h2 class="h2_Lan" id="Section2"> English</h2><br>
+ <ul style="list-style-type:disc ; margin-left: 50px; " id="languges1">
+  <li>Reading  <b>(very Good)</b></li>
+  <li>Writing <b>(Good)</b></li>
+  <li>Speaking  <b>(very Good)</b></li>
+ 
+ </ul>
+  </div>
+ 
+  <div>
+      <h2 class="h2_Lan"  id="Section3">Arabic</h2>
+      <ul style="list-style-type:circle ; margin-left: 50px;" id="languges1"><br>
+        <li>Reading <b>(very Good)</b></li>
+        <li>Writing <b>(Good)</b></li>
+     <li>Speaking <b>(Very Good)</b></li>
+      </ul>
+      
+  </div>
 </div>
-    <footer style="background-color:#B4CDE6 ;"><br>
-        <table style="border: 2px solid;">
-            <tr>  
-                <th>Contact</th>
-                <th>communication Web-sites</th>
-               
-               </tr>
+</div>
+
+
+  
+<!-- 
+    <footer style="background-color:#B4CDE6 ;" >
+      <table class="table1" >
+        <tr>
+          <th style="font-size:large ;">Contact</th>
+          <th style="font-size:large ; ">Keep Connected</th>
+          <th style="font-size:large ; ">Resources</th>
+        </tr>
+        <tr>
+          <td><hr></td>
+          <td><hr></td>
+          <td><hr></td>
+          <td><hr></td>
+          
+        </tr>
+        <tr>
+         
+          <td><i class="fa-sharp fa-solid fa-location-dot" style="font-weight:bold ;"></i> 130 Saad_ALdeen Street,Irbid,Jordan</td>
+          <td class="social"><i class="fa-brands fa-facebook" style="font-size: 15px; color: rgb(55, 55, 235);"></i>Rahma Obeidat</td>
+         
+          <td><img src="orange1.jpg" width="40px" height="40px">orange academy</td>
+        </tr>
+        <tr>
+          <td><i class="fa-sharp fa-solid fa-envelope"></i>rahmaobeidat99@yahoo.com</td>
+          <td class="social"><i class="fa-brands fa-instagram" style="font-size: 15px; color: rgb(131, 32, 75);"></i>rahmaaktham</td>
          
 
+        </tr>
+       <tr>
+        <td><i class="fa-sharp fa-solid fa-phone"></i>07753984365</td>
+        <td class="social"><i class="fa-brands fa-linkedin" style="font-size: 15px;  color: rgb(55, 55, 235);"></i>Rahma Obeidat</td>
+        <tr>
+          <td><i class="fa-sharp fa-solid fa-clock"></i></i>Sun-Thurs, 10AM-5PM</td>
+          <td class="social"><i class="fa-brands fa-github" style="font-size: 15px; color: #293d50;" ></i>rahma obeidat</td>
+         </tr>
+       </tr>
+      
+      </table>
+      <hr>
+      <p class="copyright" style="text-align:center ;">© GROUP TITLE 2022</p>
+    </footer>  -->
+    <footer>
+<div class="div_footer">
 
-        </table>
-            
+  <div>
+    <h5>Contact</h5>
+    <p class"font_footre"><i class="fa-sharp fa-solid fa-envelope"></i> rahmaobeidat99@yahoo.com</p>
+    <p class"font_footre"><i class="fa-sharp fa-solid fa-phone"></i> 07753984365</p>
+  </div>
 
-    </footer> 
+  <div>
+    <h5>Keep Connected</h5>
+    <p  class"font_footre"><i class="fa-brands fa-facebook" style="font-size: 15px; color: rgb(237, 237, 244);"></i> Rahma Obeidat</p>
+    <p  class"font_footre"><i class="fa-brands fa-github" style="font-size: 15px; color: #edf1f4;" ></i> rahma obeidat</p>
+  </div>
+
+  <div>
+    <h5>Resources</h5>
+    <img src="orange1.jpg" width="40px" height="40px">orange academy
+  
+     </div>
+</div>
+
+    </footer>
 </body>
 </html>
