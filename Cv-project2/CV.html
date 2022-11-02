@@ -61,11 +61,19 @@
       .social{
         text-decoration: underline;
       }
-      a:hover {
+    .hover_nav:hover {
   background-color:#F5EFE6;
   border-radius: 8px;
+  text-decoration: underline;
+  color: black;
  
 }
+/* #hover_nav>:hover{
+  background-color:#F5EFE6;
+  border-radius: 8px;
+  text-decoration: underline;
+  color: black;
+} */
 button:hover{
 
   background-color: azure;
@@ -86,8 +94,8 @@ th:hover{
 } 
 
 .h2_Education{
-  padding-top:5px ; 
- 
+  padding-top:10px ; 
+  padding-bottom:10px ; 
   color: aliceblue;
   background-color: #406891;
   border-radius: 8px;
@@ -96,7 +104,8 @@ th:hover{
 }
 .h2_slills{
   color: #406891;
-   
+  padding-top:10px ; 
+  padding-bottom:10px ; 
 }
 .card {
  
@@ -104,8 +113,19 @@ th:hover{
   width: 300px; 
   border: 3px solid #406891;
 }
+#card{
+ 
+  
+ width: 199px; 
+ border: 3px solid #406891;
+}
+
 
 .container {
+  padding: 2px 2px;
+}
+
+#container {
   padding: 2px 16px;
 }
 .p_Languages
@@ -165,7 +185,7 @@ background-color: aliceblue;
 
 
 /* skills section  */
-#english{
+/* #english{
   background-image: url(a.png);
    background-repeat: no-repeat;
    background-size: contain;
@@ -174,15 +194,15 @@ background-color: aliceblue;
    height: 500px;
    margin-top: -90px;
    margin-left: 160px;
-}
-#Arabic{
+} */
+/* #Arabic{
   background-image: url(a.png);
    background-repeat: no-repeat;
    background-size: contain;
    width: 500px;
    height: 500px;
 margin-top: -90px;
-}
+} */
 .languges{
 
 display:flex ;
@@ -190,12 +210,17 @@ flex-direction: row;
  justify-content: space-around;
 
 }
-#languges{
+/* #languges{
 
-margin-top: 110px; 
-/* height: 300px; */
+ margin-top: 110px;  
+ height: 300px; 
 
-} 
+}  */
+#card2{
+  width: 300px; 
+ border: 3px solid #406891;
+
+}
 .h2_Lan{
   color: #406891;
    padding-left: 100px; 
@@ -224,24 +249,24 @@ margin-top: 110px;
            
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left:540px ; font-size: 20px;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left:540px ; font-size: 20px;" >
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#Section1" style="color: rgb(40, 40, 125);">Education </a>
-              </li>
+                <a class="nav-link active hover_nav" aria-current="page" href="#Section1" style="color: rgb(40, 40, 125);">Education </a>
+              </li> &emsp13;
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#Section2" style="color: rgb(40, 40, 125);">Soft Skills </a>
-              </li>
+                <a class="nav-link active hover_nav" aria-current="page" href="#Section2" style="color: rgb(40, 40, 125);">Soft Skills </a>
+              </li> &emsp13;
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#Section3" style="color: rgb(40, 40, 125);">Technical Skills </a>
-              </li>
+                <a class="nav-link active hover_nav" aria-current="page" href="#Section3" style="color: rgb(40, 40, 125);">Technical Skills </a>
+              </li> &emsp13;
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#Section4" style="color: rgb(40, 40, 125);">Certificate</a>
-              </li>
+                <a class="nav-link active hover_nav" aria-current="page" href="#Section4" style="color: rgb(40, 40, 125);">Certificate</a>
+              </li> &emsp13;
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#Section5" style="color: rgb(40, 40, 125);">References</a>
-              </li>
+                <a class="nav-link active hover_nav" aria-current="page" href="#Section5" style="color: rgb(40, 40, 125);">References</a>
+              </li> &emsp13;
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#Section6" style="color: rgb(40, 40, 125);">Languages</a>
+                <a class="nav-link active hover_nav" aria-current="page" href="#Section6" style="color: rgb(40, 40, 125);">Languages</a>
               </li>
               
               
@@ -290,10 +315,9 @@ margin-top: 110px;
 <br>
 
     <ul style="background-color:white; height: 190px; list-style: none; padding-top: 25px; padding-right: 5px;">
-        <li><b>Jordan University Of Science and Technology</b></li>
-            <li><b>Specialization : </b> Software Engineering</li>
-            <li><b>Graduation Project:</b> Clothes Bank</li>
-            <li><b>GPA:</b>3.18</li>
+        <li><b>Jordan University Of Science and Technology</b>, Software Engineering</li>
+          
+           
         
     </ul>
 
@@ -324,15 +348,9 @@ margin-top: 110px;
     <div style="width: 300px; height: 385px; padding-top: 12px; border: 5px solid #406891;" >
        
         <img src="tahaluf1.jfif" width="150px" height="150px" style="border-radius: 12px ; margin-left: 70px;" class="edu_image"><br><br>
-        <ul style="background-color:white; height: 190px; list-style: none; padding-right: 5px;">
+        <ul style="background-color:white; height: 190px; list-style: none; padding-right: 5px;  padding-top: 25px; ">
             <li><b>Tahaluf Al Emarat Technical Solutions</b></li>
-                <li><b>courses:</b>
-                    <ul style="list-style-type: style square; ">
-                        <li>SQL</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>C# and OPP</li>
+            <li>feb/2022 - may/2022</li>
                         
                     </ul>
                 </li>
@@ -343,8 +361,9 @@ margin-top: 110px;
 </div>
 
 <div>
-  <hr>
-  <h1 style="text-align:center ; color: #406891; ">Skills</h1><br><br>
+  
+  <h2 style=" text-align: center ; background-color: #406891; color: aliceblue;  padding-top:10px ; 
+  padding-bottom:10px ; " >Skills</h2>
 
 <div id="skills">
   
@@ -385,7 +404,7 @@ margin-top: 110px;
 
 
 
-<div style="  border-radius:8px ;"  id="Section4">
+<!-- <div style="  border-radius:8px ;"  id="Section4">
   <h3 style=" text-align: center ; background-color: #406891; color: aliceblue;"> Certificate</h3><br>
 <div id="certificate">
   <div> 
@@ -413,14 +432,57 @@ margin-top: 110px;
    </div>
 </div>
   
-</div>
+</div> -->
 <br>
+
+
+<div style="  border-radius:8px ; "  id="Section4" >
+  <h2 style=" text-align: center ; background-color: #406891; color: aliceblue;  padding-top:10px ; 
+  padding-bottom:10px ; "> Certificate</h2><br>
+  <div class="div_card">
+    <div id="card2" style="background-color:rgb(206, 222, 236);">
+      <img src="QA.PNG" alt="Avatar" style="width: 295px;">
+      <div class="container">
+        <h5 style="text-align:center ;color: #406891;"><b>QA Software Testing</b></h5> 
+        <ul>
+          <li><b>The Hope international company</b></li>
+         
+          <li>FOR A TOTAL OF <sup><b>40</b></sup> HOURS</li>
+          <li>01/02/2022 <b>To</b> 22/04/2022</li>
+      
+        </ul>
+        
+      </div>
+    </div>
+  
+    <div id="card2" style="background-color:rgb(206, 222, 236);" >
+      <img src="html.png" alt="Avatar" style="width: 295px;">
+      <div class="container">
+        <h5 style="text-align:center ;color: #406891;"><b>Html course</b></h5> 
+        <ul>
+          <li><b>Sololearn</b></li>
+         
+          <li>FOR A TOTAL OF <sup><b>20</b></sup> HOURS</li>
+          <li>06/06/2022 <b>To</b> 30/10/2022</li>
+          
+      
+        </ul>
+      </div>
+    </div>
+
+   
+  
+  
+  </div>
+
+</div><br>
 <div style="  border-radius:8px ; "  id="Section5" >
-  <h3 style=" text-align: center ; background-color: #406891; color: aliceblue;"> References</h3><br>
+  <h3 style=" text-align: center ; background-color: #406891; color: aliceblue;  padding-top:10px ; 
+  padding-bottom:10px ; "> References</h3><br>
   <div class="div_card">
     <div class="card">
       <img src="7ala.jpeg" alt="Avatar" style="width: 295px;">
-      <div class="container">
+      <div id="container">
         <h4 style="text-align:center ;color: #406891;"><b>Hala Hamdan</b></h4> 
         <p>Full Stack Technical Trainer at Orange</p> 
         <p><i class="fa-sharp fa-solid fa-phone"></i> 0776802579</p>
@@ -454,10 +516,46 @@ margin-top: 110px;
 
 </div><br>
 
+<br>
+<div style="  border-radius:8px ; "  id="Section6" >
+  <h2 style=" text-align: center ; background-color: #406891; color: aliceblue;  padding-top:10px ; 
+  padding-bottom:10px ; "> Languges</h2><br>
+  <div class="div_card" >
+    <div id="card" style="background-color:white ;">
+      <img src="Arabic2.PNG" alt="Avatar" style="width: 193px;">
+      <div class="container">
+        <h5 style="text-align:center ;color: #406891;"><b>Arabic Languge</b></h5> 
+        <ul style="list-style-type:circle ; margin-left: 20px;" id="languges1">
+          <li>Reading <b>(very Good)</b></li>
+          <li>Writing <b>(Good)</b></li>
+       <li>Speaking <b>(Very Good)</b></li>
+        </ul>
+        
+      </div>
+    </div>
+  
+    <div id="card" style="background-color:white ;">
+      <img src="e1.PNG" alt="Avatar" style="width: 193px;">
+      <div class="container">
+        <h5 style="text-align:center ;color: #406891;"><b>English Languge</b></h5> 
+        <ul style="list-style-type:disc ; margin-left: 20px; " id="languges1">
+          <li>Reading  <b>(very Good)</b></li>
+          <li>Writing <b>(Good)</b></li>
+          <li>Speaking  <b>(very Good)</b></li>
+          </ul>
+      </div>
+    </div>
+
+   
+  
+  
+  </div>
+
+</div><br>
 
 
 
-
+<!-- 
 <div id="languges">
 
   
@@ -485,7 +583,7 @@ margin-top: 110px;
       
   </div>
 </div>
-</div>
+</div> -->
 
 
   
@@ -535,19 +633,23 @@ margin-top: 110px;
 
   <div>
     <h5>Contact</h5>
-    <p class"font_footre"><i class="fa-sharp fa-solid fa-envelope"></i> rahmaobeidat99@yahoo.com</p>
-    <p class"font_footre"><i class="fa-sharp fa-solid fa-phone"></i> 07753984365</p>
+    <!-- <a href="rahmaobeidat55@gmail.com" ><i class="fa-sharp fa-solid fa-envelope"></i>rahmaobeidat99@yahoo.com</a> -->
+    <p class"font_footre"><i class="fa-sharp fa-solid fa-envelope" ></i> <a href="https://mail.google.com/mail/u/0/#inbox" style="color:white ;"> rahmaobeidat55@gmail.com</a></p>
+    <!-- <p class"font_footre"><i class="fa-sharp fa-solid fa-phone"></i> 07753984365</p> -->
+    <p class"font_footre"><i class="fa-sharp fa-solid fa-phone"></i> <a href="tel:0778093329" style="color:white ;"> 07753984365</a> </p>
   </div>
 
   <div>
     <h5>Keep Connected</h5>
-    <p  class"font_footre"><i class="fa-brands fa-facebook" style="font-size: 15px; color: rgb(237, 237, 244);"></i> Rahma Obeidat</p>
-    <p  class"font_footre"><i class="fa-brands fa-github" style="font-size: 15px; color: #edf1f4;" ></i> rahma obeidat</p>
+    <a href="https://www.facebook.com/rahma.obeidat.1/"><i class="fa-brands fa-facebook" style="font-size: 40px; color: rgb(237, 237, 244);"></i> </a>
+   <a href="https://github.com/Rahma-Obeidat"> <i class="fa-brands fa-github" style="font-size: 40px; color: #edf1f4;" ></i> </a>
+   <a href="https://www.linkedin.com/in/rahma-obeidat-560b4a250"><i class="fa-brands fa-linkedin" style="font-size: 40px; color: #edf1f4;"></i> </a>
+  
   </div>
 
   <div>
     <h5>Resources</h5>
-    <img src="orange1.jpg" width="40px" height="40px">orange academy
+    <img src="orange1.jpg" width="40px" height="40px"> <a href="https://yo.orange.jo/orange-coding-academy" style="color:white ;">  orange academy</a>
   
      </div>
 </div>
